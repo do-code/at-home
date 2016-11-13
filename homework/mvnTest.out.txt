@@ -1,0 +1,908 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building rest-service 1.0-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ rest-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ rest-service ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ rest-service ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 4 resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ rest-service ---
+[INFO] Nothing to compile - all classes are up to date
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.10:test (default-test) @ rest-service ---
+[INFO] Surefire report directory: /home/maja/devstudio/git/homework1/target/surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running de.doCode.homework.rest.SimplePutTest
+WARNING [org.jboss.arquillian.container.impl.MapObject] Configuration contain properties not supported by the backing object org.jboss.as.arquillian.container.embedded.EmbeddedContainerConfiguration
+Unused property entries: {java.util.logging.manager=org.jboss.logmanager.LogManager"}
+Supported property names: [managementAddress, modulePath, password, bundlePath, managementPort, jbossHome, managementProtocol, cleanServerBaseDir, username]
+INFO  [org.jboss.modules] JBoss Modules version 1.3.3.Final
+INFO  [org.jboss.msc] JBoss MSC version 1.2.2.Final
+INFO  [org.jboss.as] JBAS015899: WildFly 8.2.0.Final "Tweek" starting
+INFO  [org.jboss.as.server.deployment.scanner] JBAS015003: Found rest-service.war in deployment directory. To trigger deployment create a file called rest-service.war.dodeploy
+INFO  [org.jboss.as.server] JBAS015888: Creating http management service using socket-binding (management-http)
+INFO  [org.xnio] XNIO version 3.3.0.Final
+INFO  [org.xnio.nio] XNIO NIO Implementation Version 3.3.0.Final
+INFO  [org.wildfly.extension.io] WFLYIO001: Worker 'default' has auto-configured to 8 core threads with 64 task threads based on your 4 available processors
+INFO  [org.jboss.as.clustering.infinispan] JBAS010280: Activating Infinispan subsystem.
+INFO  [org.jboss.as.connector.subsystems.datasources] JBAS010403: Deploying JDBC-compliant driver class org.h2.Driver (version 1.3)
+INFO  [org.jboss.as.connector.logging] JBAS010408: Starting JCA Subsystem (IronJacamar 1.1.9.Final)
+INFO  [org.jboss.as.connector.deployers.jdbc] JBAS010417: Started Driver service with driver-name = h2
+INFO  [org.jboss.remoting] JBoss Remoting version 4.0.6.Final
+INFO  [org.jboss.as.naming] JBAS011800: Activating Naming Subsystem
+WARN  [org.jboss.as.txn] JBAS010153: Node identifier property is set to the default value. Please make sure it is unique.
+INFO  [org.jboss.as.security] JBAS013171: Activating Security Subsystem
+INFO  [org.jboss.as.jsf] JBAS012615: Activated the following JSF Implementations: [main]
+INFO  [org.jboss.as.security] JBAS013170: Current PicketBox version=4.0.21.Final
+INFO  [org.jboss.as.webservices] JBAS015537: Activating WebServices Extension
+INFO  [org.wildfly.extension.undertow] JBAS017502: Undertow 1.1.0.Final starting
+INFO  [org.wildfly.extension.undertow] JBAS017502: Undertow 1.1.0.Final starting
+INFO  [org.jboss.as.naming] JBAS011802: Starting Naming Service
+INFO  [org.jboss.as.mail.extension] JBAS015400: Bound mail session [java:jboss/mail/Default]
+INFO  [com.arjuna.ats.jbossatx] ARJUNA032010: JBossTS Recovery Service (tag: 9aa71) - JBoss Inc.
+INFO  [org.wildfly.extension.undertow] JBAS017527: Creating file handler for path /home/maja/devstudio/runtimes/wildfly-8.2.0.Final/welcome-content
+INFO  [org.wildfly.extension.undertow] JBAS017525: Started server default-server.
+INFO  [com.arjuna.ats.arjuna] ARJUNA012324: Start RecoveryActivators
+INFO  [com.arjuna.ats.arjuna] ARJUNA012296: ExpiredEntryMonitor running at So, 13 Nov 2016 14:33:08
+INFO  [org.wildfly.extension.undertow] JBAS017531: Host default-host starting
+INFO  [com.arjuna.ats.arjuna] ARJUNA012343: RecoveryManagerImple is ready. Socket listener is turned off.
+INFO  [com.arjuna.ats.jbossatx] ARJUNA032013: Starting transaction recovery manager
+INFO  [org.wildfly.extension.undertow] JBAS017519: Undertow HTTP listener default listening on /127.0.0.1:8080
+INFO  [com.arjuna.ats.jbossatx] ARJUNA032017: JBossTS Transaction Service (JTA version - tag: 9aa71) - JBoss Inc.
+INFO  [org.jboss.as.server.deployment.scanner] JBAS015012: Started FileSystemDeploymentService for directory /home/maja/devstudio/runtimes/wildfly-8.2.0.Final/standalone/deployments
+INFO  [org.jboss.as.server.deployment] JBAS015876: Starting deployment of "rest-service.war" (runtime-name: "rest-service.war")
+INFO  [org.jboss.as.connector.subsystems.datasources] JBAS010400: Bound data source [java:jboss/datasources/ExampleDS]
+INFO  [org.jboss.ws.common.management] JBWS022052: Starting JBoss Web Services - Stack CXF Server 4.3.2.Final
+INFO  [org.jboss.weld.deployer] JBAS016002: Processing weld deployment rest-service.war
+INFO  [org.hibernate.validator.internal.util.Version] HV000001: Hibernate Validator 5.1.3.Final
+INFO  [org.jboss.weld.deployer] JBAS016005: Starting Services for CDI deployment: rest-service.war
+INFO  [org.jboss.weld.Version] WELD-000900: 2.2.6 (Final)
+INFO  [org.jboss.weld.deployer] JBAS016008: Starting weld service for deployment rest-service.war
+INFO  [org.wildfly.extension.undertow] JBAS017534: Registered web context: /rest-service
+INFO  [org.jboss.as.server] JBAS018559: Deployed "rest-service.war" (runtime-name : "rest-service.war")
+INFO  [org.jboss.as] JBAS015961: Http management interface listening on http://127.0.0.1:9990/management
+INFO  [org.jboss.as] JBAS015951: Admin console listening on http://127.0.0.1:9990
+INFO  [org.jboss.as] JBAS015874: WildFly 8.2.0.Final "Tweek" started in 3684ms - Started 272 of 326 services (92 services are lazy, passive or on-demand)
+INFO  2016-11-13 14:33:10,649 RestBaseConfig.deploy(RestBaseConfig.java:34): ShrinkWrap create this: test.war:
+/WEB-INF/
+/WEB-INF/classes/
+/WEB-INF/classes/META-INF/
+/WEB-INF/classes/META-INF/persistence.xml
+/WEB-INF/classes/log4j.properties
+/WEB-INF/classes/org/
+/WEB-INF/classes/org/apache/
+/WEB-INF/classes/org/apache/commons/
+/WEB-INF/classes/org/apache/commons/lang3/
+/WEB-INF/classes/org/apache/commons/lang3/StringUtils.class
+/WEB-INF/classes/de/
+/WEB-INF/classes/de/doCode/
+/WEB-INF/classes/de/doCode/homework/
+/WEB-INF/classes/de/doCode/homework/rest/
+/WEB-INF/classes/de/doCode/homework/rest/SimpleDeleteTest.class
+/WEB-INF/classes/de/doCode/homework/rest/FuntionalCreateTest.class
+/WEB-INF/classes/de/doCode/homework/rest/PersonServiceImpl.class
+/WEB-INF/classes/de/doCode/homework/rest/SimpleGetTest.class
+/WEB-INF/classes/de/doCode/homework/rest/PersonServiceImplPureJUnitTest.class
+/WEB-INF/classes/de/doCode/homework/rest/FunctionalBaseTest.class
+/WEB-INF/classes/de/doCode/homework/rest/SimplePutTest.class
+/WEB-INF/classes/de/doCode/homework/rest/SimplePostTest.class
+/WEB-INF/classes/de/doCode/homework/rest/Service.class
+/WEB-INF/classes/de/doCode/homework/data/
+/WEB-INF/classes/de/doCode/homework/data/Database.class
+/WEB-INF/classes/de/doCode/homework/data/Persistence.class
+/WEB-INF/classes/de/doCode/homework/RestBase.class
+/WEB-INF/classes/de/doCode/homework/JaxRsActivator.class
+/WEB-INF/classes/de/doCode/homework/model/
+/WEB-INF/classes/de/doCode/homework/model/Person.class
+/WEB-INF/classes/de/doCode/homework/model/PersonImpl.class
+/WEB-INF/classes/de/doCode/homework/RestBaseConfig.class
+/WEB-INF/classes/de/doCode/homework/UnitTestHashMapDatabase.class
+/WEB-INF/classes/de/doCode/homework/control/
+/WEB-INF/classes/de/doCode/homework/control/Controller.class
+/WEB-INF/classes/de/doCode/homework/control/ServiceController.class
+/WEB-INF/beans.xml
+/META-INF/
+/META-INF/persistence.xml
+INFO  [org.xnio] XNIO version 3.2.0.Beta4
+INFO  [org.xnio.nio] XNIO NIO Implementation Version 3.2.0.Beta4
+INFO  [org.jboss.remoting] JBoss Remoting version (unknown)
+INFO  [org.jboss.as.repository] JBAS014900: Content added at location /home/maja/devstudio/runtimes/wildfly-8.2.0.Final/standalone/data/content/57/f584fe91ecc2fe89e6844511ba761c3a8f09b4/content
+INFO  [org.jboss.as.server.deployment] JBAS015876: Starting deployment of "test.war" (runtime-name: "test.war")
+INFO  [org.jboss.as.jpa] JBAS011401: Read persistence.xml for test
+INFO  [org.jboss.as.jpa] JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'test.war#test'
+INFO  [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [
+	name: test
+	...]
+INFO  [org.hibernate.Version] HHH000412: Hibernate Core {4.3.7.Final}
+INFO  [org.hibernate.cfg.Environment] HHH000206: hibernate.properties not found
+INFO  [org.hibernate.cfg.Environment] HHH000021: Bytecode provider name : javassist
+INFO  [org.jboss.weld.deployer] JBAS016002: Processing weld deployment test.war
+INFO  [org.jboss.weld.deployer] JBAS016005: Starting Services for CDI deployment: test.war
+INFO  [org.jboss.weld.deployer] JBAS016008: Starting weld service for deployment test.war
+INFO  [org.jboss.as.jpa] JBAS011409: Starting Persistence Unit (phase 2 of 2) Service 'test.war#test'
+INFO  [org.hibernate.annotations.common.Version] HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
+INFO  [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+WARN  [org.hibernate.dialect.H2Dialect] HHH000431: Unable to determine H2 database version, certain features may not work
+INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] HHH000397: Using ASTQueryTranslatorFactory
+INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] HHH000227: Running hbm2ddl schema export
+Hibernate: drop table person if exists
+Hibernate: create table person (id integer generated by default as identity, name varchar(20) not null, primary key (id))
+INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] HHH000230: Schema export complete
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.SimpleGetTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.FuntionalCreateTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.PersonServiceImplPureJUnitTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.SimplePutTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.SimplePostTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.SimpleDeleteTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+[0m14:33:12,668 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-6) Deploying javax.ws.rs.core.Application: class de.doCode.homework.JaxRsActivator$Proxy$_$$_WeldClientProxy
+[0mINFO  [org.wildfly.extension.undertow] JBAS017534: Registered web context: /test
+INFO  [org.jboss.as.server] JBAS018559: Deployed "test.war" (runtime-name : "test.war")
+DEBUG 2016-11-13 14:33:13,471 LogUtils.<clinit>(LogUtils.java:140): Using org.apache.cxf.common.logging.Log4jLogger for logging.
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+WARN  2016-11-13 14:33:13,886 ServiceController.update(ServiceController.java:53): no Person updated for id:'0' name:'anyName'
+INFO  2016-11-13 14:33:13,889 PersonServiceImpl.update(PersonServiceImpl.java:32): update(id:'0' with name:'anyName') -> 'null'
+Hibernate: insert into person (id, name) values (null, ?)
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+DEBUG 2016-11-13 14:33:13,988 ServiceController.create(ServiceController.java:32): person saved:Person [id=1, name=aName-c8ad009cfced8a]
+INFO  2016-11-13 14:33:13,989 PersonServiceImpl.create(PersonServiceImpl.java:39): create('aName-c8ad009cfced8a') -> 'Person [id=1, name=aName-c8ad009cfced8a]'
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: update person set name=? where id=?
+DEBUG 2016-11-13 14:33:14,285 ServiceController.update(ServiceController.java:48): person updated:Person [id=1, name=newName1] oldName:'aName-c8ad009cfced8a'
+INFO  2016-11-13 14:33:14,286 PersonServiceImpl.update(PersonServiceImpl.java:32): update(id:'1' with name:'newName1') -> 'Person [id=1, name=newName1]'
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: update person set name=? where id=?
+DEBUG 2016-11-13 14:33:14,306 ServiceController.update(ServiceController.java:48): person updated:Person [id=1, name=newName2] oldName:'newName1'
+INFO  2016-11-13 14:33:14,306 PersonServiceImpl.update(PersonServiceImpl.java:32): update(id:'1' with name:'newName2') -> 'Person [id=1, name=newName2]'
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+DEBUG 2016-11-13 14:33:14,317 ServiceController.update(ServiceController.java:48): person updated:Person [id=1, name=newName2] oldName:'newName2'
+INFO  2016-11-13 14:33:14,317 PersonServiceImpl.update(PersonServiceImpl.java:32): update(id:'1' with name:'newName2') -> 'Person [id=1, name=newName2]'
+Hibernate: insert into person (id, name) values (null, ?)
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+DEBUG 2016-11-13 14:33:14,361 ServiceController.create(ServiceController.java:32): person saved:Person [id=2, name=1234]
+INFO  2016-11-13 14:33:14,362 PersonServiceImpl.create(PersonServiceImpl.java:39): create('1234') -> 'Person [id=2, name=1234]'
+DEBUG 2016-11-13 14:33:14,366 SimplePutTest.putWithLengthValidation(SimplePutTest.java:50): try to putWithLengthValidation:
+DEBUG 2016-11-13 14:33:14,392 SimplePutTest.putWithLengthValidation(SimplePutTest.java:50): try to putWithLengthValidation:0
+DEBUG 2016-11-13 14:33:14,404 SimplePutTest.putWithLengthValidation(SimplePutTest.java:50): try to putWithLengthValidation:01
+DEBUG 2016-11-13 14:33:14,410 SimplePutTest.putWithLengthValidation(SimplePutTest.java:50): try to putWithLengthValidation:012
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: update person set name=? where id=?
+DEBUG 2016-11-13 14:33:14,419 ServiceController.update(ServiceController.java:48): person updated:Person [id=2, name=012] oldName:'1234'
+INFO  2016-11-13 14:33:14,419 PersonServiceImpl.update(PersonServiceImpl.java:32): update(id:'2' with name:'012') -> 'Person [id=2, name=012]'
+DEBUG 2016-11-13 14:33:14,421 SimplePutTest.putWithLengthValidation(SimplePutTest.java:50): try to putWithLengthValidation:0123
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: update person set name=? where id=?
+DEBUG 2016-11-13 14:33:14,434 ServiceController.update(ServiceController.java:48): person updated:Person [id=2, name=0123] oldName:'012'
+INFO  2016-11-13 14:33:14,434 PersonServiceImpl.update(PersonServiceImpl.java:32): update(id:'2' with name:'0123') -> 'Person [id=2, name=0123]'
+DEBUG 2016-11-13 14:33:14,436 SimplePutTest.putWithLengthValidation(SimplePutTest.java:50): try to putWithLengthValidation:01234
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: update person set name=? where id=?
+DEBUG 2016-11-13 14:33:14,449 ServiceController.update(ServiceController.java:48): person updated:Person [id=2, name=01234] oldName:'0123'
+INFO  2016-11-13 14:33:14,450 PersonServiceImpl.update(PersonServiceImpl.java:32): update(id:'2' with name:'01234') -> 'Person [id=2, name=01234]'
+DEBUG 2016-11-13 14:33:14,451 SimplePutTest.putWithLengthValidation(SimplePutTest.java:50): try to putWithLengthValidation:012345
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: update person set name=? where id=?
+DEBUG 2016-11-13 14:33:14,460 ServiceController.update(ServiceController.java:48): person updated:Person [id=2, name=012345] oldName:'01234'
+INFO  2016-11-13 14:33:14,460 PersonServiceImpl.update(PersonServiceImpl.java:32): update(id:'2' with name:'012345') -> 'Person [id=2, name=012345]'
+DEBUG 2016-11-13 14:33:14,462 SimplePutTest.putWithLengthValidation(SimplePutTest.java:50): try to putWithLengthValidation:0123456
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: update person set name=? where id=?
+DEBUG 2016-11-13 14:33:14,470 ServiceController.update(ServiceController.java:48): person updated:Person [id=2, name=0123456] oldName:'012345'
+INFO  2016-11-13 14:33:14,470 PersonServiceImpl.update(PersonServiceImpl.java:32): update(id:'2' with name:'0123456') -> 'Person [id=2, name=0123456]'
+DEBUG 2016-11-13 14:33:14,472 SimplePutTest.putWithLengthValidation(SimplePutTest.java:50): try to putWithLengthValidation:01234567
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: update person set name=? where id=?
+DEBUG 2016-11-13 14:33:14,481 ServiceController.update(ServiceController.java:48): person updated:Person [id=2, name=01234567] oldName:'0123456'
+INFO  2016-11-13 14:33:14,481 PersonServiceImpl.update(PersonServiceImpl.java:32): update(id:'2' with name:'01234567') -> 'Person [id=2, name=01234567]'
+DEBUG 2016-11-13 14:33:14,483 SimplePutTest.putWithLengthValidation(SimplePutTest.java:50): try to putWithLengthValidation:012345678
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: update person set name=? where id=?
+DEBUG 2016-11-13 14:33:14,493 ServiceController.update(ServiceController.java:48): person updated:Person [id=2, name=012345678] oldName:'01234567'
+INFO  2016-11-13 14:33:14,494 PersonServiceImpl.update(PersonServiceImpl.java:32): update(id:'2' with name:'012345678') -> 'Person [id=2, name=012345678]'
+DEBUG 2016-11-13 14:33:14,495 SimplePutTest.putWithLengthValidation(SimplePutTest.java:50): try to putWithLengthValidation:0123456789
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: update person set name=? where id=?
+DEBUG 2016-11-13 14:33:14,503 ServiceController.update(ServiceController.java:48): person updated:Person [id=2, name=0123456789] oldName:'012345678'
+INFO  2016-11-13 14:33:14,503 PersonServiceImpl.update(PersonServiceImpl.java:32): update(id:'2' with name:'0123456789') -> 'Person [id=2, name=0123456789]'
+DEBUG 2016-11-13 14:33:14,505 SimplePutTest.putWithLengthValidation(SimplePutTest.java:50): try to putWithLengthValidation:01234567890
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: update person set name=? where id=?
+DEBUG 2016-11-13 14:33:14,513 ServiceController.update(ServiceController.java:48): person updated:Person [id=2, name=01234567890] oldName:'0123456789'
+INFO  2016-11-13 14:33:14,513 PersonServiceImpl.update(PersonServiceImpl.java:32): update(id:'2' with name:'01234567890') -> 'Person [id=2, name=01234567890]'
+DEBUG 2016-11-13 14:33:14,514 SimplePutTest.putWithLengthValidation(SimplePutTest.java:50): try to putWithLengthValidation:012345678901
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: update person set name=? where id=?
+DEBUG 2016-11-13 14:33:14,522 ServiceController.update(ServiceController.java:48): person updated:Person [id=2, name=012345678901] oldName:'01234567890'
+INFO  2016-11-13 14:33:14,522 PersonServiceImpl.update(PersonServiceImpl.java:32): update(id:'2' with name:'012345678901') -> 'Person [id=2, name=012345678901]'
+DEBUG 2016-11-13 14:33:14,523 SimplePutTest.putWithLengthValidation(SimplePutTest.java:50): try to putWithLengthValidation:0123456789012
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: update person set name=? where id=?
+DEBUG 2016-11-13 14:33:14,531 ServiceController.update(ServiceController.java:48): person updated:Person [id=2, name=0123456789012] oldName:'012345678901'
+INFO  2016-11-13 14:33:14,532 PersonServiceImpl.update(PersonServiceImpl.java:32): update(id:'2' with name:'0123456789012') -> 'Person [id=2, name=0123456789012]'
+DEBUG 2016-11-13 14:33:14,534 SimplePutTest.putWithLengthValidation(SimplePutTest.java:50): try to putWithLengthValidation:01234567890123
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: update person set name=? where id=?
+DEBUG 2016-11-13 14:33:14,543 ServiceController.update(ServiceController.java:48): person updated:Person [id=2, name=01234567890123] oldName:'0123456789012'
+INFO  2016-11-13 14:33:14,543 PersonServiceImpl.update(PersonServiceImpl.java:32): update(id:'2' with name:'01234567890123') -> 'Person [id=2, name=01234567890123]'
+DEBUG 2016-11-13 14:33:14,548 SimplePutTest.putWithLengthValidation(SimplePutTest.java:50): try to putWithLengthValidation:012345678901234
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: update person set name=? where id=?
+DEBUG 2016-11-13 14:33:14,567 ServiceController.update(ServiceController.java:48): person updated:Person [id=2, name=012345678901234] oldName:'01234567890123'
+INFO  2016-11-13 14:33:14,567 PersonServiceImpl.update(PersonServiceImpl.java:32): update(id:'2' with name:'012345678901234') -> 'Person [id=2, name=012345678901234]'
+DEBUG 2016-11-13 14:33:14,569 SimplePutTest.putWithLengthValidation(SimplePutTest.java:50): try to putWithLengthValidation:0123456789012345
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: update person set name=? where id=?
+DEBUG 2016-11-13 14:33:14,585 ServiceController.update(ServiceController.java:48): person updated:Person [id=2, name=0123456789012345] oldName:'012345678901234'
+INFO  2016-11-13 14:33:14,586 PersonServiceImpl.update(PersonServiceImpl.java:32): update(id:'2' with name:'0123456789012345') -> 'Person [id=2, name=0123456789012345]'
+DEBUG 2016-11-13 14:33:14,587 SimplePutTest.putWithLengthValidation(SimplePutTest.java:50): try to putWithLengthValidation:01234567890123456
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: update person set name=? where id=?
+DEBUG 2016-11-13 14:33:14,600 ServiceController.update(ServiceController.java:48): person updated:Person [id=2, name=01234567890123456] oldName:'0123456789012345'
+INFO  2016-11-13 14:33:14,600 PersonServiceImpl.update(PersonServiceImpl.java:32): update(id:'2' with name:'01234567890123456') -> 'Person [id=2, name=01234567890123456]'
+DEBUG 2016-11-13 14:33:14,602 SimplePutTest.putWithLengthValidation(SimplePutTest.java:50): try to putWithLengthValidation:012345678901234567
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: update person set name=? where id=?
+DEBUG 2016-11-13 14:33:14,612 ServiceController.update(ServiceController.java:48): person updated:Person [id=2, name=012345678901234567] oldName:'01234567890123456'
+INFO  2016-11-13 14:33:14,612 PersonServiceImpl.update(PersonServiceImpl.java:32): update(id:'2' with name:'012345678901234567') -> 'Person [id=2, name=012345678901234567]'
+DEBUG 2016-11-13 14:33:14,614 SimplePutTest.putWithLengthValidation(SimplePutTest.java:50): try to putWithLengthValidation:0123456789012345678
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: update person set name=? where id=?
+DEBUG 2016-11-13 14:33:14,622 ServiceController.update(ServiceController.java:48): person updated:Person [id=2, name=0123456789012345678] oldName:'012345678901234567'
+INFO  2016-11-13 14:33:14,622 PersonServiceImpl.update(PersonServiceImpl.java:32): update(id:'2' with name:'0123456789012345678') -> 'Person [id=2, name=0123456789012345678]'
+DEBUG 2016-11-13 14:33:14,624 SimplePutTest.putWithLengthValidation(SimplePutTest.java:50): try to putWithLengthValidation:01234567890123456789
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: update person set name=? where id=?
+DEBUG 2016-11-13 14:33:14,631 ServiceController.update(ServiceController.java:48): person updated:Person [id=2, name=01234567890123456789] oldName:'0123456789012345678'
+INFO  2016-11-13 14:33:14,631 PersonServiceImpl.update(PersonServiceImpl.java:32): update(id:'2' with name:'01234567890123456789') -> 'Person [id=2, name=01234567890123456789]'
+DEBUG 2016-11-13 14:33:14,632 SimplePutTest.putWithLengthValidation(SimplePutTest.java:50): try to putWithLengthValidation:012345678901234567890
+DEBUG 2016-11-13 14:33:14,637 SimplePutTest.putWithLengthValidation(SimplePutTest.java:50): try to putWithLengthValidation:0123456789012345678901
+DEBUG 2016-11-13 14:33:14,642 SimplePutTest.putWithLengthValidation(SimplePutTest.java:50): try to putWithLengthValidation:01234567890123456789012
+DEBUG 2016-11-13 14:33:14,650 SimplePutTest.putWithLengthValidation(SimplePutTest.java:50): try to putWithLengthValidation:012345678901234567890123
+DEBUG 2016-11-13 14:33:14,665 SimplePutTest.putWithLengthValidation(SimplePutTest.java:50): try to putWithLengthValidation:0123456789012345678901234
+DEBUG 2016-11-13 14:33:14,671 SimplePutTest.putWithLengthValidation(SimplePutTest.java:50): try to putWithLengthValidation:01234567890123456789012345
+DEBUG 2016-11-13 14:33:14,676 SimplePutTest.putWithLengthValidation(SimplePutTest.java:50): try to putWithLengthValidation:012345678901234567890123456
+DEBUG 2016-11-13 14:33:14,685 SimplePutTest.putWithLengthValidation(SimplePutTest.java:50): try to putWithLengthValidation:0123456789012345678901234567
+DEBUG 2016-11-13 14:33:14,691 SimplePutTest.putWithLengthValidation(SimplePutTest.java:50): try to putWithLengthValidation:01234567890123456789012345678
+INFO  [org.wildfly.extension.undertow] JBAS017535: Unregistered web context: /test
+INFO  [org.jboss.as.jpa] JBAS011410: Stopping Persistence Unit (phase 2 of 2) Service 'test.war#test'
+INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] HHH000227: Running hbm2ddl schema export
+Hibernate: drop table person if exists
+INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] HHH000230: Schema export complete
+INFO  [org.jboss.weld.deployer] JBAS016009: Stopping weld service for deployment test.war
+INFO  [org.jboss.as.jpa] JBAS011410: Stopping Persistence Unit (phase 1 of 2) Service 'test.war#test'
+INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment test.war (runtime-name: test.war) in 71ms
+INFO  [org.jboss.as.repository] JBAS014901: Content removed from location /home/maja/devstudio/runtimes/wildfly-8.2.0.Final/standalone/data/content/57/f584fe91ecc2fe89e6844511ba761c3a8f09b4/content
+INFO  [org.jboss.as.server] JBAS018558: Undeployed "test.war" (runtime-name: "test.war")
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.34 sec
+Running de.doCode.homework.rest.SimplePostTest
+INFO  2016-11-13 14:33:14,798 RestBaseConfig.deploy(RestBaseConfig.java:34): ShrinkWrap create this: test.war:
+/WEB-INF/
+/WEB-INF/classes/
+/WEB-INF/classes/META-INF/
+/WEB-INF/classes/META-INF/persistence.xml
+/WEB-INF/classes/log4j.properties
+/WEB-INF/classes/org/
+/WEB-INF/classes/org/apache/
+/WEB-INF/classes/org/apache/commons/
+/WEB-INF/classes/org/apache/commons/lang3/
+/WEB-INF/classes/org/apache/commons/lang3/StringUtils.class
+/WEB-INF/classes/de/
+/WEB-INF/classes/de/doCode/
+/WEB-INF/classes/de/doCode/homework/
+/WEB-INF/classes/de/doCode/homework/rest/
+/WEB-INF/classes/de/doCode/homework/rest/SimpleDeleteTest.class
+/WEB-INF/classes/de/doCode/homework/rest/FuntionalCreateTest.class
+/WEB-INF/classes/de/doCode/homework/rest/PersonServiceImpl.class
+/WEB-INF/classes/de/doCode/homework/rest/SimpleGetTest.class
+/WEB-INF/classes/de/doCode/homework/rest/PersonServiceImplPureJUnitTest.class
+/WEB-INF/classes/de/doCode/homework/rest/FunctionalBaseTest.class
+/WEB-INF/classes/de/doCode/homework/rest/SimplePutTest.class
+/WEB-INF/classes/de/doCode/homework/rest/SimplePostTest.class
+/WEB-INF/classes/de/doCode/homework/rest/Service.class
+/WEB-INF/classes/de/doCode/homework/data/
+/WEB-INF/classes/de/doCode/homework/data/Database.class
+/WEB-INF/classes/de/doCode/homework/data/Persistence.class
+/WEB-INF/classes/de/doCode/homework/RestBase.class
+/WEB-INF/classes/de/doCode/homework/JaxRsActivator.class
+/WEB-INF/classes/de/doCode/homework/model/
+/WEB-INF/classes/de/doCode/homework/model/Person.class
+/WEB-INF/classes/de/doCode/homework/model/PersonImpl.class
+/WEB-INF/classes/de/doCode/homework/RestBaseConfig.class
+/WEB-INF/classes/de/doCode/homework/UnitTestHashMapDatabase.class
+/WEB-INF/classes/de/doCode/homework/control/
+/WEB-INF/classes/de/doCode/homework/control/Controller.class
+/WEB-INF/classes/de/doCode/homework/control/ServiceController.class
+/WEB-INF/beans.xml
+/META-INF/
+/META-INF/persistence.xml
+INFO  [org.jboss.as.repository] JBAS014900: Content added at location /home/maja/devstudio/runtimes/wildfly-8.2.0.Final/standalone/data/content/a8/1fb7a6a04df649e8ff1fa9cf7cef9390b02e2e/content
+INFO  [org.jboss.as.server.deployment] JBAS015876: Starting deployment of "test.war" (runtime-name: "test.war")
+INFO  [org.jboss.as.jpa] JBAS011401: Read persistence.xml for test
+INFO  [org.jboss.as.jpa] JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'test.war#test'
+INFO  [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [
+	name: test
+	...]
+INFO  [org.jboss.weld.deployer] JBAS016002: Processing weld deployment test.war
+INFO  [org.jboss.weld.deployer] JBAS016005: Starting Services for CDI deployment: test.war
+INFO  [org.jboss.weld.deployer] JBAS016008: Starting weld service for deployment test.war
+INFO  [org.jboss.as.jpa] JBAS011409: Starting Persistence Unit (phase 2 of 2) Service 'test.war#test'
+INFO  [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+WARN  [org.hibernate.dialect.H2Dialect] HHH000431: Unable to determine H2 database version, certain features may not work
+INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] HHH000397: Using ASTQueryTranslatorFactory
+INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] HHH000227: Running hbm2ddl schema export
+Hibernate: drop table person if exists
+Hibernate: create table person (id integer generated by default as identity, name varchar(20) not null, primary key (id))
+INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] HHH000230: Schema export complete
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.SimpleGetTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.FuntionalCreateTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.PersonServiceImplPureJUnitTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.SimplePutTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.SimplePostTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.SimpleDeleteTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+[0m14:33:15,149 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-2) Deploying javax.ws.rs.core.Application: class de.doCode.homework.JaxRsActivator$Proxy$_$$_WeldClientProxy
+[0mINFO  [org.wildfly.extension.undertow] JBAS017534: Registered web context: /test
+INFO  [org.jboss.as.server] JBAS018559: Deployed "test.war" (runtime-name : "test.war")
+Hibernate: insert into person (id, name) values (null, ?)
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+DEBUG 2016-11-13 14:33:15,325 ServiceController.create(ServiceController.java:32): person saved:Person [id=1, name=aName-aff3b66944bd22]
+INFO  2016-11-13 14:33:15,326 PersonServiceImpl.create(PersonServiceImpl.java:39): create('aName-aff3b66944bd22') -> 'Person [id=1, name=aName-aff3b66944bd22]'
+DEBUG 2016-11-13 14:33:15,335 SimplePostTest.postWithLengthValidation(SimplePostTest.java:46): try to postWithLengthValidation:
+DEBUG 2016-11-13 14:33:15,356 SimplePostTest.postWithLengthValidation(SimplePostTest.java:46): try to postWithLengthValidation:0
+DEBUG 2016-11-13 14:33:15,360 SimplePostTest.postWithLengthValidation(SimplePostTest.java:46): try to postWithLengthValidation:01
+DEBUG 2016-11-13 14:33:15,365 SimplePostTest.postWithLengthValidation(SimplePostTest.java:46): try to postWithLengthValidation:012
+Hibernate: insert into person (id, name) values (null, ?)
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+DEBUG 2016-11-13 14:33:15,371 ServiceController.create(ServiceController.java:32): person saved:Person [id=2, name=012]
+INFO  2016-11-13 14:33:15,372 PersonServiceImpl.create(PersonServiceImpl.java:39): create('012') -> 'Person [id=2, name=012]'
+DEBUG 2016-11-13 14:33:15,375 SimplePostTest.postWithLengthValidation(SimplePostTest.java:46): try to postWithLengthValidation:0123
+Hibernate: insert into person (id, name) values (null, ?)
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+DEBUG 2016-11-13 14:33:15,380 ServiceController.create(ServiceController.java:32): person saved:Person [id=3, name=0123]
+INFO  2016-11-13 14:33:15,381 PersonServiceImpl.create(PersonServiceImpl.java:39): create('0123') -> 'Person [id=3, name=0123]'
+DEBUG 2016-11-13 14:33:15,382 SimplePostTest.postWithLengthValidation(SimplePostTest.java:46): try to postWithLengthValidation:01234
+Hibernate: insert into person (id, name) values (null, ?)
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+DEBUG 2016-11-13 14:33:15,388 ServiceController.create(ServiceController.java:32): person saved:Person [id=4, name=01234]
+INFO  2016-11-13 14:33:15,388 PersonServiceImpl.create(PersonServiceImpl.java:39): create('01234') -> 'Person [id=4, name=01234]'
+DEBUG 2016-11-13 14:33:15,389 SimplePostTest.postWithLengthValidation(SimplePostTest.java:46): try to postWithLengthValidation:012345
+Hibernate: insert into person (id, name) values (null, ?)
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+DEBUG 2016-11-13 14:33:15,394 ServiceController.create(ServiceController.java:32): person saved:Person [id=5, name=012345]
+INFO  2016-11-13 14:33:15,395 PersonServiceImpl.create(PersonServiceImpl.java:39): create('012345') -> 'Person [id=5, name=012345]'
+DEBUG 2016-11-13 14:33:15,396 SimplePostTest.postWithLengthValidation(SimplePostTest.java:46): try to postWithLengthValidation:0123456
+Hibernate: insert into person (id, name) values (null, ?)
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+DEBUG 2016-11-13 14:33:15,401 ServiceController.create(ServiceController.java:32): person saved:Person [id=6, name=0123456]
+INFO  2016-11-13 14:33:15,402 PersonServiceImpl.create(PersonServiceImpl.java:39): create('0123456') -> 'Person [id=6, name=0123456]'
+DEBUG 2016-11-13 14:33:15,403 SimplePostTest.postWithLengthValidation(SimplePostTest.java:46): try to postWithLengthValidation:01234567
+Hibernate: insert into person (id, name) values (null, ?)
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+DEBUG 2016-11-13 14:33:15,408 ServiceController.create(ServiceController.java:32): person saved:Person [id=7, name=01234567]
+INFO  2016-11-13 14:33:15,409 PersonServiceImpl.create(PersonServiceImpl.java:39): create('01234567') -> 'Person [id=7, name=01234567]'
+DEBUG 2016-11-13 14:33:15,410 SimplePostTest.postWithLengthValidation(SimplePostTest.java:46): try to postWithLengthValidation:012345678
+Hibernate: insert into person (id, name) values (null, ?)
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+DEBUG 2016-11-13 14:33:15,415 ServiceController.create(ServiceController.java:32): person saved:Person [id=8, name=012345678]
+INFO  2016-11-13 14:33:15,416 PersonServiceImpl.create(PersonServiceImpl.java:39): create('012345678') -> 'Person [id=8, name=012345678]'
+DEBUG 2016-11-13 14:33:15,417 SimplePostTest.postWithLengthValidation(SimplePostTest.java:46): try to postWithLengthValidation:0123456789
+Hibernate: insert into person (id, name) values (null, ?)
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+DEBUG 2016-11-13 14:33:15,426 ServiceController.create(ServiceController.java:32): person saved:Person [id=9, name=0123456789]
+INFO  2016-11-13 14:33:15,426 PersonServiceImpl.create(PersonServiceImpl.java:39): create('0123456789') -> 'Person [id=9, name=0123456789]'
+DEBUG 2016-11-13 14:33:15,428 SimplePostTest.postWithLengthValidation(SimplePostTest.java:46): try to postWithLengthValidation:01234567890
+Hibernate: insert into person (id, name) values (null, ?)
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+DEBUG 2016-11-13 14:33:15,433 ServiceController.create(ServiceController.java:32): person saved:Person [id=10, name=01234567890]
+INFO  2016-11-13 14:33:15,433 PersonServiceImpl.create(PersonServiceImpl.java:39): create('01234567890') -> 'Person [id=10, name=01234567890]'
+DEBUG 2016-11-13 14:33:15,435 SimplePostTest.postWithLengthValidation(SimplePostTest.java:46): try to postWithLengthValidation:012345678901
+Hibernate: insert into person (id, name) values (null, ?)
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+DEBUG 2016-11-13 14:33:15,441 ServiceController.create(ServiceController.java:32): person saved:Person [id=11, name=012345678901]
+INFO  2016-11-13 14:33:15,441 PersonServiceImpl.create(PersonServiceImpl.java:39): create('012345678901') -> 'Person [id=11, name=012345678901]'
+DEBUG 2016-11-13 14:33:15,443 SimplePostTest.postWithLengthValidation(SimplePostTest.java:46): try to postWithLengthValidation:0123456789012
+Hibernate: insert into person (id, name) values (null, ?)
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+DEBUG 2016-11-13 14:33:15,451 ServiceController.create(ServiceController.java:32): person saved:Person [id=12, name=0123456789012]
+INFO  2016-11-13 14:33:15,451 PersonServiceImpl.create(PersonServiceImpl.java:39): create('0123456789012') -> 'Person [id=12, name=0123456789012]'
+DEBUG 2016-11-13 14:33:15,453 SimplePostTest.postWithLengthValidation(SimplePostTest.java:46): try to postWithLengthValidation:01234567890123
+Hibernate: insert into person (id, name) values (null, ?)
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+DEBUG 2016-11-13 14:33:15,459 ServiceController.create(ServiceController.java:32): person saved:Person [id=13, name=01234567890123]
+INFO  2016-11-13 14:33:15,459 PersonServiceImpl.create(PersonServiceImpl.java:39): create('01234567890123') -> 'Person [id=13, name=01234567890123]'
+DEBUG 2016-11-13 14:33:15,461 SimplePostTest.postWithLengthValidation(SimplePostTest.java:46): try to postWithLengthValidation:012345678901234
+Hibernate: insert into person (id, name) values (null, ?)
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+DEBUG 2016-11-13 14:33:15,467 ServiceController.create(ServiceController.java:32): person saved:Person [id=14, name=012345678901234]
+INFO  2016-11-13 14:33:15,467 PersonServiceImpl.create(PersonServiceImpl.java:39): create('012345678901234') -> 'Person [id=14, name=012345678901234]'
+DEBUG 2016-11-13 14:33:15,469 SimplePostTest.postWithLengthValidation(SimplePostTest.java:46): try to postWithLengthValidation:0123456789012345
+Hibernate: insert into person (id, name) values (null, ?)
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+DEBUG 2016-11-13 14:33:15,475 ServiceController.create(ServiceController.java:32): person saved:Person [id=15, name=0123456789012345]
+INFO  2016-11-13 14:33:15,475 PersonServiceImpl.create(PersonServiceImpl.java:39): create('0123456789012345') -> 'Person [id=15, name=0123456789012345]'
+DEBUG 2016-11-13 14:33:15,477 SimplePostTest.postWithLengthValidation(SimplePostTest.java:46): try to postWithLengthValidation:01234567890123456
+Hibernate: insert into person (id, name) values (null, ?)
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+DEBUG 2016-11-13 14:33:15,484 ServiceController.create(ServiceController.java:32): person saved:Person [id=16, name=01234567890123456]
+INFO  2016-11-13 14:33:15,484 PersonServiceImpl.create(PersonServiceImpl.java:39): create('01234567890123456') -> 'Person [id=16, name=01234567890123456]'
+DEBUG 2016-11-13 14:33:15,486 SimplePostTest.postWithLengthValidation(SimplePostTest.java:46): try to postWithLengthValidation:012345678901234567
+Hibernate: insert into person (id, name) values (null, ?)
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+DEBUG 2016-11-13 14:33:15,491 ServiceController.create(ServiceController.java:32): person saved:Person [id=17, name=012345678901234567]
+INFO  2016-11-13 14:33:15,492 PersonServiceImpl.create(PersonServiceImpl.java:39): create('012345678901234567') -> 'Person [id=17, name=012345678901234567]'
+DEBUG 2016-11-13 14:33:15,493 SimplePostTest.postWithLengthValidation(SimplePostTest.java:46): try to postWithLengthValidation:0123456789012345678
+Hibernate: insert into person (id, name) values (null, ?)
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+DEBUG 2016-11-13 14:33:15,498 ServiceController.create(ServiceController.java:32): person saved:Person [id=18, name=0123456789012345678]
+INFO  2016-11-13 14:33:15,499 PersonServiceImpl.create(PersonServiceImpl.java:39): create('0123456789012345678') -> 'Person [id=18, name=0123456789012345678]'
+DEBUG 2016-11-13 14:33:15,500 SimplePostTest.postWithLengthValidation(SimplePostTest.java:46): try to postWithLengthValidation:01234567890123456789
+Hibernate: insert into person (id, name) values (null, ?)
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+DEBUG 2016-11-13 14:33:15,506 ServiceController.create(ServiceController.java:32): person saved:Person [id=19, name=01234567890123456789]
+INFO  2016-11-13 14:33:15,506 PersonServiceImpl.create(PersonServiceImpl.java:39): create('01234567890123456789') -> 'Person [id=19, name=01234567890123456789]'
+DEBUG 2016-11-13 14:33:15,508 SimplePostTest.postWithLengthValidation(SimplePostTest.java:46): try to postWithLengthValidation:012345678901234567890
+DEBUG 2016-11-13 14:33:15,512 SimplePostTest.postWithLengthValidation(SimplePostTest.java:46): try to postWithLengthValidation:0123456789012345678901
+DEBUG 2016-11-13 14:33:15,516 SimplePostTest.postWithLengthValidation(SimplePostTest.java:46): try to postWithLengthValidation:01234567890123456789012
+DEBUG 2016-11-13 14:33:15,521 SimplePostTest.postWithLengthValidation(SimplePostTest.java:46): try to postWithLengthValidation:012345678901234567890123
+DEBUG 2016-11-13 14:33:15,531 SimplePostTest.postWithLengthValidation(SimplePostTest.java:46): try to postWithLengthValidation:0123456789012345678901234
+DEBUG 2016-11-13 14:33:15,536 SimplePostTest.postWithLengthValidation(SimplePostTest.java:46): try to postWithLengthValidation:01234567890123456789012345
+DEBUG 2016-11-13 14:33:15,542 SimplePostTest.postWithLengthValidation(SimplePostTest.java:46): try to postWithLengthValidation:012345678901234567890123456
+DEBUG 2016-11-13 14:33:15,547 SimplePostTest.postWithLengthValidation(SimplePostTest.java:46): try to postWithLengthValidation:0123456789012345678901234567
+DEBUG 2016-11-13 14:33:15,552 SimplePostTest.postWithLengthValidation(SimplePostTest.java:46): try to postWithLengthValidation:01234567890123456789012345678
+INFO  [org.wildfly.extension.undertow] JBAS017535: Unregistered web context: /test
+INFO  [org.jboss.as.jpa] JBAS011410: Stopping Persistence Unit (phase 2 of 2) Service 'test.war#test'
+INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] HHH000227: Running hbm2ddl schema export
+Hibernate: drop table person if exists
+INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] HHH000230: Schema export complete
+INFO  [org.jboss.weld.deployer] JBAS016009: Stopping weld service for deployment test.war
+INFO  [org.jboss.as.jpa] JBAS011410: Stopping Persistence Unit (phase 1 of 2) Service 'test.war#test'
+INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment test.war (runtime-name: test.war) in 34ms
+INFO  [org.jboss.as.repository] JBAS014901: Content removed from location /home/maja/devstudio/runtimes/wildfly-8.2.0.Final/standalone/data/content/a8/1fb7a6a04df649e8ff1fa9cf7cef9390b02e2e/content
+INFO  [org.jboss.as.server] JBAS018558: Undeployed "test.war" (runtime-name: "test.war")
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.808 sec
+Running de.doCode.homework.rest.SimpleGetTest
+INFO  2016-11-13 14:33:15,612 RestBaseConfig.deploy(RestBaseConfig.java:34): ShrinkWrap create this: test.war:
+/WEB-INF/
+/WEB-INF/classes/
+/WEB-INF/classes/META-INF/
+/WEB-INF/classes/META-INF/persistence.xml
+/WEB-INF/classes/log4j.properties
+/WEB-INF/classes/org/
+/WEB-INF/classes/org/apache/
+/WEB-INF/classes/org/apache/commons/
+/WEB-INF/classes/org/apache/commons/lang3/
+/WEB-INF/classes/org/apache/commons/lang3/StringUtils.class
+/WEB-INF/classes/de/
+/WEB-INF/classes/de/doCode/
+/WEB-INF/classes/de/doCode/homework/
+/WEB-INF/classes/de/doCode/homework/rest/
+/WEB-INF/classes/de/doCode/homework/rest/SimpleDeleteTest.class
+/WEB-INF/classes/de/doCode/homework/rest/FuntionalCreateTest.class
+/WEB-INF/classes/de/doCode/homework/rest/PersonServiceImpl.class
+/WEB-INF/classes/de/doCode/homework/rest/SimpleGetTest.class
+/WEB-INF/classes/de/doCode/homework/rest/PersonServiceImplPureJUnitTest.class
+/WEB-INF/classes/de/doCode/homework/rest/FunctionalBaseTest.class
+/WEB-INF/classes/de/doCode/homework/rest/SimplePutTest.class
+/WEB-INF/classes/de/doCode/homework/rest/SimplePostTest.class
+/WEB-INF/classes/de/doCode/homework/rest/Service.class
+/WEB-INF/classes/de/doCode/homework/data/
+/WEB-INF/classes/de/doCode/homework/data/Database.class
+/WEB-INF/classes/de/doCode/homework/data/Persistence.class
+/WEB-INF/classes/de/doCode/homework/RestBase.class
+/WEB-INF/classes/de/doCode/homework/JaxRsActivator.class
+/WEB-INF/classes/de/doCode/homework/model/
+/WEB-INF/classes/de/doCode/homework/model/Person.class
+/WEB-INF/classes/de/doCode/homework/model/PersonImpl.class
+/WEB-INF/classes/de/doCode/homework/RestBaseConfig.class
+/WEB-INF/classes/de/doCode/homework/UnitTestHashMapDatabase.class
+/WEB-INF/classes/de/doCode/homework/control/
+/WEB-INF/classes/de/doCode/homework/control/Controller.class
+/WEB-INF/classes/de/doCode/homework/control/ServiceController.class
+/WEB-INF/beans.xml
+/META-INF/
+/META-INF/persistence.xml
+INFO  [org.jboss.as.repository] JBAS014900: Content added at location /home/maja/devstudio/runtimes/wildfly-8.2.0.Final/standalone/data/content/a8/1fb7a6a04df649e8ff1fa9cf7cef9390b02e2e/content
+INFO  [org.jboss.as.server.deployment] JBAS015876: Starting deployment of "test.war" (runtime-name: "test.war")
+INFO  [org.jboss.as.jpa] JBAS011401: Read persistence.xml for test
+INFO  [org.jboss.as.jpa] JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'test.war#test'
+INFO  [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [
+	name: test
+	...]
+INFO  [org.jboss.weld.deployer] JBAS016002: Processing weld deployment test.war
+INFO  [org.jboss.weld.deployer] JBAS016005: Starting Services for CDI deployment: test.war
+INFO  [org.jboss.weld.deployer] JBAS016008: Starting weld service for deployment test.war
+INFO  [org.jboss.as.jpa] JBAS011409: Starting Persistence Unit (phase 2 of 2) Service 'test.war#test'
+INFO  [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+WARN  [org.hibernate.dialect.H2Dialect] HHH000431: Unable to determine H2 database version, certain features may not work
+INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] HHH000397: Using ASTQueryTranslatorFactory
+INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] HHH000227: Running hbm2ddl schema export
+Hibernate: drop table person if exists
+Hibernate: create table person (id integer generated by default as identity, name varchar(20) not null, primary key (id))
+INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] HHH000230: Schema export complete
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.SimpleGetTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.FuntionalCreateTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.PersonServiceImplPureJUnitTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.SimplePutTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.SimpleDeleteTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.SimplePostTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+[0m14:33:15,968 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-5) Deploying javax.ws.rs.core.Application: class de.doCode.homework.JaxRsActivator$Proxy$_$$_WeldClientProxy
+[0mINFO  [org.wildfly.extension.undertow] JBAS017534: Registered web context: /test
+INFO  [org.jboss.as.server] JBAS018559: Deployed "test.war" (runtime-name : "test.war")
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+WARN  2016-11-13 14:33:16,034 ServiceController.read(ServiceController.java:76): no Person found for invalid id:'0'
+INFO  2016-11-13 14:33:16,035 PersonServiceImpl.read(PersonServiceImpl.java:25): read('0') -> 'null'
+INFO  [org.wildfly.extension.undertow] JBAS017535: Unregistered web context: /test
+INFO  [org.jboss.as.jpa] JBAS011410: Stopping Persistence Unit (phase 2 of 2) Service 'test.war#test'
+INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] HHH000227: Running hbm2ddl schema export
+Hibernate: drop table person if exists
+INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] HHH000230: Schema export complete
+INFO  [org.jboss.weld.deployer] JBAS016009: Stopping weld service for deployment test.war
+INFO  [org.jboss.as.jpa] JBAS011410: Stopping Persistence Unit (phase 1 of 2) Service 'test.war#test'
+INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment test.war (runtime-name: test.war) in 30ms
+INFO  [org.jboss.as.repository] JBAS014901: Content removed from location /home/maja/devstudio/runtimes/wildfly-8.2.0.Final/standalone/data/content/a8/1fb7a6a04df649e8ff1fa9cf7cef9390b02e2e/content
+INFO  [org.jboss.as.server] JBAS018558: Undeployed "test.war" (runtime-name: "test.war")
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.482 sec
+Running de.doCode.homework.rest.SimpleDeleteTest
+INFO  2016-11-13 14:33:16,095 RestBaseConfig.deploy(RestBaseConfig.java:34): ShrinkWrap create this: test.war:
+/WEB-INF/
+/WEB-INF/classes/
+/WEB-INF/classes/META-INF/
+/WEB-INF/classes/META-INF/persistence.xml
+/WEB-INF/classes/log4j.properties
+/WEB-INF/classes/org/
+/WEB-INF/classes/org/apache/
+/WEB-INF/classes/org/apache/commons/
+/WEB-INF/classes/org/apache/commons/lang3/
+/WEB-INF/classes/org/apache/commons/lang3/StringUtils.class
+/WEB-INF/classes/de/
+/WEB-INF/classes/de/doCode/
+/WEB-INF/classes/de/doCode/homework/
+/WEB-INF/classes/de/doCode/homework/rest/
+/WEB-INF/classes/de/doCode/homework/rest/SimpleDeleteTest.class
+/WEB-INF/classes/de/doCode/homework/rest/FuntionalCreateTest.class
+/WEB-INF/classes/de/doCode/homework/rest/PersonServiceImpl.class
+/WEB-INF/classes/de/doCode/homework/rest/SimpleGetTest.class
+/WEB-INF/classes/de/doCode/homework/rest/PersonServiceImplPureJUnitTest.class
+/WEB-INF/classes/de/doCode/homework/rest/FunctionalBaseTest.class
+/WEB-INF/classes/de/doCode/homework/rest/SimplePutTest.class
+/WEB-INF/classes/de/doCode/homework/rest/SimplePostTest.class
+/WEB-INF/classes/de/doCode/homework/rest/Service.class
+/WEB-INF/classes/de/doCode/homework/data/
+/WEB-INF/classes/de/doCode/homework/data/Database.class
+/WEB-INF/classes/de/doCode/homework/data/Persistence.class
+/WEB-INF/classes/de/doCode/homework/RestBase.class
+/WEB-INF/classes/de/doCode/homework/JaxRsActivator.class
+/WEB-INF/classes/de/doCode/homework/model/
+/WEB-INF/classes/de/doCode/homework/model/Person.class
+/WEB-INF/classes/de/doCode/homework/model/PersonImpl.class
+/WEB-INF/classes/de/doCode/homework/RestBaseConfig.class
+/WEB-INF/classes/de/doCode/homework/UnitTestHashMapDatabase.class
+/WEB-INF/classes/de/doCode/homework/control/
+/WEB-INF/classes/de/doCode/homework/control/Controller.class
+/WEB-INF/classes/de/doCode/homework/control/ServiceController.class
+/WEB-INF/beans.xml
+/META-INF/
+/META-INF/persistence.xml
+INFO  [org.jboss.as.repository] JBAS014900: Content added at location /home/maja/devstudio/runtimes/wildfly-8.2.0.Final/standalone/data/content/e3/3b6fa20a70b5858635c3bd0e31c6aa61db0e48/content
+INFO  [org.jboss.as.server.deployment] JBAS015876: Starting deployment of "test.war" (runtime-name: "test.war")
+INFO  [org.jboss.as.jpa] JBAS011401: Read persistence.xml for test
+INFO  [org.jboss.as.jpa] JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'test.war#test'
+INFO  [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [
+	name: test
+	...]
+INFO  [org.jboss.weld.deployer] JBAS016002: Processing weld deployment test.war
+INFO  [org.jboss.weld.deployer] JBAS016005: Starting Services for CDI deployment: test.war
+INFO  [org.jboss.weld.deployer] JBAS016008: Starting weld service for deployment test.war
+INFO  [org.jboss.as.jpa] JBAS011409: Starting Persistence Unit (phase 2 of 2) Service 'test.war#test'
+INFO  [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+WARN  [org.hibernate.dialect.H2Dialect] HHH000431: Unable to determine H2 database version, certain features may not work
+INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] HHH000397: Using ASTQueryTranslatorFactory
+INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] HHH000227: Running hbm2ddl schema export
+Hibernate: drop table person if exists
+Hibernate: create table person (id integer generated by default as identity, name varchar(20) not null, primary key (id))
+INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] HHH000230: Schema export complete
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.SimpleGetTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.FuntionalCreateTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.PersonServiceImplPureJUnitTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.SimplePutTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.SimpleDeleteTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.SimplePostTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+[0m14:33:16,378 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-6) Deploying javax.ws.rs.core.Application: class de.doCode.homework.JaxRsActivator$Proxy$_$$_WeldClientProxy
+[0mINFO  [org.wildfly.extension.undertow] JBAS017534: Registered web context: /test
+INFO  [org.jboss.as.server] JBAS018559: Deployed "test.war" (runtime-name : "test.war")
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+WARN  2016-11-13 14:33:16,437 ServiceController.delete(ServiceController.java:92): no Person deleted for id:'0'
+INFO  2016-11-13 14:33:16,438 PersonServiceImpl.delete(PersonServiceImpl.java:46): delete('0') -> 'null'
+INFO  [org.wildfly.extension.undertow] JBAS017535: Unregistered web context: /test
+INFO  [org.jboss.as.jpa] JBAS011410: Stopping Persistence Unit (phase 2 of 2) Service 'test.war#test'
+INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] HHH000227: Running hbm2ddl schema export
+Hibernate: drop table person if exists
+INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] HHH000230: Schema export complete
+INFO  [org.jboss.weld.deployer] JBAS016009: Stopping weld service for deployment test.war
+INFO  [org.jboss.as.jpa] JBAS011410: Stopping Persistence Unit (phase 1 of 2) Service 'test.war#test'
+INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment test.war (runtime-name: test.war) in 19ms
+INFO  [org.jboss.as.repository] JBAS014901: Content removed from location /home/maja/devstudio/runtimes/wildfly-8.2.0.Final/standalone/data/content/e3/3b6fa20a70b5858635c3bd0e31c6aa61db0e48/content
+INFO  [org.jboss.as.server] JBAS018558: Undeployed "test.war" (runtime-name: "test.war")
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.384 sec
+Running de.doCode.homework.rest.FuntionalCreateTest
+INFO  2016-11-13 14:33:16,479 RestBaseConfig.deploy(RestBaseConfig.java:34): ShrinkWrap create this: test.war:
+/WEB-INF/
+/WEB-INF/classes/
+/WEB-INF/classes/META-INF/
+/WEB-INF/classes/META-INF/persistence.xml
+/WEB-INF/classes/log4j.properties
+/WEB-INF/classes/org/
+/WEB-INF/classes/org/apache/
+/WEB-INF/classes/org/apache/commons/
+/WEB-INF/classes/org/apache/commons/lang3/
+/WEB-INF/classes/org/apache/commons/lang3/StringUtils.class
+/WEB-INF/classes/de/
+/WEB-INF/classes/de/doCode/
+/WEB-INF/classes/de/doCode/homework/
+/WEB-INF/classes/de/doCode/homework/rest/
+/WEB-INF/classes/de/doCode/homework/rest/SimpleDeleteTest.class
+/WEB-INF/classes/de/doCode/homework/rest/FuntionalCreateTest.class
+/WEB-INF/classes/de/doCode/homework/rest/PersonServiceImpl.class
+/WEB-INF/classes/de/doCode/homework/rest/SimpleGetTest.class
+/WEB-INF/classes/de/doCode/homework/rest/PersonServiceImplPureJUnitTest.class
+/WEB-INF/classes/de/doCode/homework/rest/FunctionalBaseTest.class
+/WEB-INF/classes/de/doCode/homework/rest/SimplePutTest.class
+/WEB-INF/classes/de/doCode/homework/rest/SimplePostTest.class
+/WEB-INF/classes/de/doCode/homework/rest/Service.class
+/WEB-INF/classes/de/doCode/homework/data/
+/WEB-INF/classes/de/doCode/homework/data/Database.class
+/WEB-INF/classes/de/doCode/homework/data/Persistence.class
+/WEB-INF/classes/de/doCode/homework/RestBase.class
+/WEB-INF/classes/de/doCode/homework/JaxRsActivator.class
+/WEB-INF/classes/de/doCode/homework/model/
+/WEB-INF/classes/de/doCode/homework/model/Person.class
+/WEB-INF/classes/de/doCode/homework/model/PersonImpl.class
+/WEB-INF/classes/de/doCode/homework/RestBaseConfig.class
+/WEB-INF/classes/de/doCode/homework/UnitTestHashMapDatabase.class
+/WEB-INF/classes/de/doCode/homework/control/
+/WEB-INF/classes/de/doCode/homework/control/Controller.class
+/WEB-INF/classes/de/doCode/homework/control/ServiceController.class
+/WEB-INF/beans.xml
+/META-INF/
+/META-INF/persistence.xml
+INFO  [org.jboss.as.repository] JBAS014900: Content added at location /home/maja/devstudio/runtimes/wildfly-8.2.0.Final/standalone/data/content/e3/3b6fa20a70b5858635c3bd0e31c6aa61db0e48/content
+INFO  [org.jboss.as.server.deployment] JBAS015876: Starting deployment of "test.war" (runtime-name: "test.war")
+INFO  [org.jboss.as.jpa] JBAS011401: Read persistence.xml for test
+INFO  [org.jboss.as.jpa] JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'test.war#test'
+INFO  [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [
+	name: test
+	...]
+INFO  [org.jboss.weld.deployer] JBAS016002: Processing weld deployment test.war
+INFO  [org.jboss.weld.deployer] JBAS016005: Starting Services for CDI deployment: test.war
+INFO  [org.jboss.weld.deployer] JBAS016008: Starting weld service for deployment test.war
+INFO  [org.jboss.as.jpa] JBAS011409: Starting Persistence Unit (phase 2 of 2) Service 'test.war#test'
+INFO  [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+WARN  [org.hibernate.dialect.H2Dialect] HHH000431: Unable to determine H2 database version, certain features may not work
+INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] HHH000397: Using ASTQueryTranslatorFactory
+INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] HHH000227: Running hbm2ddl schema export
+Hibernate: drop table person if exists
+Hibernate: create table person (id integer generated by default as identity, name varchar(20) not null, primary key (id))
+INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] HHH000230: Schema export complete
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.SimpleGetTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.FuntionalCreateTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.PersonServiceImplPureJUnitTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.SimplePutTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.SimplePostTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.SimpleDeleteTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+[0m14:33:16,756 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-6) Deploying javax.ws.rs.core.Application: class de.doCode.homework.JaxRsActivator$Proxy$_$$_WeldClientProxy
+[0mINFO  [org.wildfly.extension.undertow] JBAS017534: Registered web context: /test
+INFO  [org.jboss.as.server] JBAS018559: Deployed "test.war" (runtime-name : "test.war")
+DEBUG 2016-11-13 14:33:16,786 FuntionalCreateTest.createReadUpdateDeleteTest(FuntionalCreateTest.java:19): start with functional test createReadUpdateDeleteTest
+Hibernate: insert into person (id, name) values (null, ?)
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+DEBUG 2016-11-13 14:33:16,827 ServiceController.create(ServiceController.java:32): person saved:Person [id=1, name=aName-e88070363b1048]
+INFO  2016-11-13 14:33:16,829 PersonServiceImpl.create(PersonServiceImpl.java:39): create('aName-e88070363b1048') -> 'Person [id=1, name=aName-e88070363b1048]'
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+INFO  2016-11-13 14:33:16,844 PersonServiceImpl.read(PersonServiceImpl.java:25): read('1') -> 'Person [id=1, name=aName-e88070363b1048]'
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: update person set name=? where id=?
+DEBUG 2016-11-13 14:33:16,855 ServiceController.update(ServiceController.java:48): person updated:Person [id=1, name=aName-36ef4264214efa] oldName:'aName-e88070363b1048'
+INFO  2016-11-13 14:33:16,861 PersonServiceImpl.update(PersonServiceImpl.java:32): update(id:'1' with name:'aName-36ef4264214efa') -> 'Person [id=1, name=aName-36ef4264214efa]'
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+Hibernate: delete from person where id=?
+DEBUG 2016-11-13 14:33:16,873 ServiceController.delete(ServiceController.java:87): person deleted:Person [id=1, name=aName-36ef4264214efa]
+INFO  2016-11-13 14:33:16,874 PersonServiceImpl.delete(PersonServiceImpl.java:46): delete('1') -> 'Person [id=1, name=aName-36ef4264214efa]'
+Hibernate: select personimpl0_.id as id1_0_0_, personimpl0_.name as name2_0_0_ from person personimpl0_ where personimpl0_.id=?
+WARN  2016-11-13 14:33:16,880 ServiceController.read(ServiceController.java:76): no Person found for invalid id:'1'
+INFO  2016-11-13 14:33:16,881 PersonServiceImpl.read(PersonServiceImpl.java:25): read('1') -> 'null'
+INFO  [org.wildfly.extension.undertow] JBAS017535: Unregistered web context: /test
+INFO  [org.jboss.as.jpa] JBAS011410: Stopping Persistence Unit (phase 2 of 2) Service 'test.war#test'
+INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] HHH000227: Running hbm2ddl schema export
+Hibernate: drop table person if exists
+INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] HHH000230: Schema export complete
+INFO  [org.jboss.weld.deployer] JBAS016009: Stopping weld service for deployment test.war
+INFO  [org.jboss.as.jpa] JBAS011410: Stopping Persistence Unit (phase 1 of 2) Service 'test.war#test'
+INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment test.war (runtime-name: test.war) in 36ms
+INFO  [org.jboss.as.repository] JBAS014901: Content removed from location /home/maja/devstudio/runtimes/wildfly-8.2.0.Final/standalone/data/content/e3/3b6fa20a70b5858635c3bd0e31c6aa61db0e48/content
+INFO  [org.jboss.as.server] JBAS018558: Undeployed "test.war" (runtime-name: "test.war")
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.464 sec
+Running de.doCode.homework.rest.PersonServiceImplPureJUnitTest
+INFO  2016-11-13 14:33:16,950 RestBaseConfig.deploy(RestBaseConfig.java:34): ShrinkWrap create this: test.war:
+/WEB-INF/
+/WEB-INF/classes/
+/WEB-INF/classes/META-INF/
+/WEB-INF/classes/META-INF/persistence.xml
+/WEB-INF/classes/log4j.properties
+/WEB-INF/classes/org/
+/WEB-INF/classes/org/apache/
+/WEB-INF/classes/org/apache/commons/
+/WEB-INF/classes/org/apache/commons/lang3/
+/WEB-INF/classes/org/apache/commons/lang3/StringUtils.class
+/WEB-INF/classes/de/
+/WEB-INF/classes/de/doCode/
+/WEB-INF/classes/de/doCode/homework/
+/WEB-INF/classes/de/doCode/homework/rest/
+/WEB-INF/classes/de/doCode/homework/rest/SimpleDeleteTest.class
+/WEB-INF/classes/de/doCode/homework/rest/FuntionalCreateTest.class
+/WEB-INF/classes/de/doCode/homework/rest/PersonServiceImpl.class
+/WEB-INF/classes/de/doCode/homework/rest/SimpleGetTest.class
+/WEB-INF/classes/de/doCode/homework/rest/PersonServiceImplPureJUnitTest.class
+/WEB-INF/classes/de/doCode/homework/rest/FunctionalBaseTest.class
+/WEB-INF/classes/de/doCode/homework/rest/SimplePutTest.class
+/WEB-INF/classes/de/doCode/homework/rest/SimplePostTest.class
+/WEB-INF/classes/de/doCode/homework/rest/Service.class
+/WEB-INF/classes/de/doCode/homework/data/
+/WEB-INF/classes/de/doCode/homework/data/Database.class
+/WEB-INF/classes/de/doCode/homework/data/Persistence.class
+/WEB-INF/classes/de/doCode/homework/RestBase.class
+/WEB-INF/classes/de/doCode/homework/JaxRsActivator.class
+/WEB-INF/classes/de/doCode/homework/model/
+/WEB-INF/classes/de/doCode/homework/model/Person.class
+/WEB-INF/classes/de/doCode/homework/model/PersonImpl.class
+/WEB-INF/classes/de/doCode/homework/RestBaseConfig.class
+/WEB-INF/classes/de/doCode/homework/UnitTestHashMapDatabase.class
+/WEB-INF/classes/de/doCode/homework/control/
+/WEB-INF/classes/de/doCode/homework/control/Controller.class
+/WEB-INF/classes/de/doCode/homework/control/ServiceController.class
+/WEB-INF/beans.xml
+/META-INF/
+/META-INF/persistence.xml
+INFO  [org.jboss.as.repository] JBAS014900: Content added at location /home/maja/devstudio/runtimes/wildfly-8.2.0.Final/standalone/data/content/e3/3b6fa20a70b5858635c3bd0e31c6aa61db0e48/content
+INFO  [org.jboss.as.server.deployment] JBAS015876: Starting deployment of "test.war" (runtime-name: "test.war")
+INFO  [org.jboss.as.jpa] JBAS011401: Read persistence.xml for test
+INFO  [org.jboss.as.jpa] JBAS011409: Starting Persistence Unit (phase 1 of 2) Service 'test.war#test'
+INFO  [org.hibernate.jpa.internal.util.LogHelper] HHH000204: Processing PersistenceUnitInfo [
+	name: test
+	...]
+INFO  [org.jboss.weld.deployer] JBAS016002: Processing weld deployment test.war
+INFO  [org.jboss.weld.deployer] JBAS016005: Starting Services for CDI deployment: test.war
+INFO  [org.jboss.weld.deployer] JBAS016008: Starting weld service for deployment test.war
+INFO  [org.jboss.as.jpa] JBAS011409: Starting Persistence Unit (phase 2 of 2) Service 'test.war#test'
+INFO  [org.hibernate.dialect.Dialect] HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+WARN  [org.hibernate.dialect.H2Dialect] HHH000431: Unable to determine H2 database version, certain features may not work
+INFO  [org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory] HHH000397: Using ASTQueryTranslatorFactory
+INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] HHH000227: Running hbm2ddl schema export
+Hibernate: drop table person if exists
+Hibernate: create table person (id integer generated by default as identity, name varchar(20) not null, primary key (id))
+INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] HHH000230: Schema export complete
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.SimpleGetTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.FuntionalCreateTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.PersonServiceImplPureJUnitTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.SimplePutTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.SimpleDeleteTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+INFO  [org.jboss.weld.Bootstrap] WELD-000119: Not generating any bean definitions from de.doCode.homework.rest.SimplePostTest because of underlying class loading error: Type org.jboss.shrinkwrap.api.asset.Asset from [Module "deployment.test.war:main" from Service Module Loader] not found.  If this is unexpected, enable DEBUG logging to see the full error.
+[0m14:33:17,214 INFO  [org.jboss.resteasy.spi.ResteasyDeployment] (MSC service thread 1-7) Deploying javax.ws.rs.core.Application: class de.doCode.homework.JaxRsActivator$Proxy$_$$_WeldClientProxy
+[0mINFO  [org.wildfly.extension.undertow] JBAS017534: Registered web context: /test
+INFO  [org.jboss.as.server] JBAS018559: Deployed "test.war" (runtime-name : "test.war")
+INFO  2016-11-13 14:33:17,240 UnitTestHashMapDatabase.<init>(UnitTestHashMapDatabase.java:26): db started!
+DEBUG 2016-11-13 14:33:17,241 PersonServiceImplPureJUnitTest.testRead(PersonServiceImplPureJUnitTest.java:41): run testRead
+DEBUG 2016-11-13 14:33:17,241 UnitTestHashMapDatabase.read(UnitTestHashMapDatabase.java:63): read:-1878983652 found:null
+DEBUG 2016-11-13 14:33:17,241 UnitTestHashMapDatabase.saveNew(UnitTestHashMapDatabase.java:38): saved new Person:Person [id=-1878983652, name=123]
+DEBUG 2016-11-13 14:33:17,242 ServiceController.create(ServiceController.java:32): person saved:Person [id=-1878983652, name=123]
+INFO  2016-11-13 14:33:17,242 PersonServiceImpl.create(PersonServiceImpl.java:39): create('123') -> 'Person [id=-1878983652, name=123]'
+DEBUG 2016-11-13 14:33:17,242 UnitTestHashMapDatabase.read(UnitTestHashMapDatabase.java:63): read:-1878983652 found:Person [id=-1878983652, name=123]
+INFO  2016-11-13 14:33:17,242 PersonServiceImpl.read(PersonServiceImpl.java:25): read('-1878983652') -> 'Person [id=-1878983652, name=123]'
+DEBUG 2016-11-13 14:33:17,243 UnitTestHashMapDatabase.read(UnitTestHashMapDatabase.java:63): read:-1878983652 found:Person [id=-1878983652, name=123]
+INFO  2016-11-13 14:33:17,243 PersonServiceImpl.read(PersonServiceImpl.java:25): read('-1878983652') -> 'Person [id=-1878983652, name=123]'
+DEBUG 2016-11-13 14:33:17,243 UnitTestHashMapDatabase.read(UnitTestHashMapDatabase.java:63): read:-1878983652 found:Person [id=-1878983652, name=123]
+INFO  2016-11-13 14:33:17,244 PersonServiceImpl.read(PersonServiceImpl.java:25): read('-1878983652') -> 'Person [id=-1878983652, name=123]'
+INFO  2016-11-13 14:33:17,245 UnitTestHashMapDatabase.<init>(UnitTestHashMapDatabase.java:26): db started!
+DEBUG 2016-11-13 14:33:17,246 PersonServiceImplPureJUnitTest.testCreate(PersonServiceImplPureJUnitTest.java:54): run testCreate
+INFO  2016-11-13 14:33:17,246 PersonServiceImpl.create(PersonServiceImpl.java:39): create('null') -> 'null'
+INFO  2016-11-13 14:33:17,247 PersonServiceImpl.create(PersonServiceImpl.java:39): create('') -> 'null'
+INFO  2016-11-13 14:33:17,247 PersonServiceImpl.create(PersonServiceImpl.java:39): create('  ') -> 'null'
+INFO  2016-11-13 14:33:17,247 PersonServiceImpl.create(PersonServiceImpl.java:39): create('ab') -> 'null'
+INFO  2016-11-13 14:33:17,247 PersonServiceImpl.create(PersonServiceImpl.java:39): create('123456789012345678901') -> 'null'
+DEBUG 2016-11-13 14:33:17,247 UnitTestHashMapDatabase.read(UnitTestHashMapDatabase.java:63): read:1370814736 found:null
+DEBUG 2016-11-13 14:33:17,247 UnitTestHashMapDatabase.saveNew(UnitTestHashMapDatabase.java:38): saved new Person:Person [id=1370814736, name=123]
+DEBUG 2016-11-13 14:33:17,248 ServiceController.create(ServiceController.java:32): person saved:Person [id=1370814736, name=123]
+INFO  2016-11-13 14:33:17,248 PersonServiceImpl.create(PersonServiceImpl.java:39): create('123') -> 'Person [id=1370814736, name=123]'
+INFO  2016-11-13 14:33:17,249 UnitTestHashMapDatabase.<init>(UnitTestHashMapDatabase.java:26): db started!
+DEBUG 2016-11-13 14:33:17,284 PersonServiceImplPureJUnitTest.testDelete(PersonServiceImplPureJUnitTest.java:92): run testDelete
+DEBUG 2016-11-13 14:33:17,284 UnitTestHashMapDatabase.read(UnitTestHashMapDatabase.java:63): read:194158921 found:null
+DEBUG 2016-11-13 14:33:17,284 UnitTestHashMapDatabase.saveNew(UnitTestHashMapDatabase.java:38): saved new Person:Person [id=194158921, name=123]
+DEBUG 2016-11-13 14:33:17,285 ServiceController.create(ServiceController.java:32): person saved:Person [id=194158921, name=123]
+INFO  2016-11-13 14:33:17,285 PersonServiceImpl.create(PersonServiceImpl.java:39): create('123') -> 'Person [id=194158921, name=123]'
+DEBUG 2016-11-13 14:33:17,285 UnitTestHashMapDatabase.read(UnitTestHashMapDatabase.java:63): read:194158921 found:Person [id=194158921, name=123]
+INFO  2016-11-13 14:33:17,285 PersonServiceImpl.read(PersonServiceImpl.java:25): read('194158921') -> 'Person [id=194158921, name=123]'
+DEBUG 2016-11-13 14:33:17,285 UnitTestHashMapDatabase.read(UnitTestHashMapDatabase.java:63): read:194158921 found:Person [id=194158921, name=123]
+DEBUG 2016-11-13 14:33:17,285 UnitTestHashMapDatabase.delete(UnitTestHashMapDatabase.java:76): delete:Person [id=194158921, name=123]
+DEBUG 2016-11-13 14:33:17,286 ServiceController.delete(ServiceController.java:87): person deleted:Person [id=194158921, name=123]
+INFO  2016-11-13 14:33:17,286 PersonServiceImpl.delete(PersonServiceImpl.java:46): delete('194158921') -> 'Person [id=194158921, name=123]'
+DEBUG 2016-11-13 14:33:17,286 UnitTestHashMapDatabase.read(UnitTestHashMapDatabase.java:63): read:194158921 found:null
+WARN  2016-11-13 14:33:17,286 ServiceController.read(ServiceController.java:76): no Person found for invalid id:'194158921'
+INFO  2016-11-13 14:33:17,286 PersonServiceImpl.read(PersonServiceImpl.java:25): read('194158921') -> 'null'
+INFO  2016-11-13 14:33:17,288 UnitTestHashMapDatabase.<init>(UnitTestHashMapDatabase.java:26): db started!
+DEBUG 2016-11-13 14:33:17,288 PersonServiceImplPureJUnitTest.testUpdate(PersonServiceImplPureJUnitTest.java:72): run testUpdate
+DEBUG 2016-11-13 14:33:17,289 UnitTestHashMapDatabase.read(UnitTestHashMapDatabase.java:63): read:752628020 found:null
+DEBUG 2016-11-13 14:33:17,289 UnitTestHashMapDatabase.saveNew(UnitTestHashMapDatabase.java:38): saved new Person:Person [id=752628020, name=123]
+DEBUG 2016-11-13 14:33:17,289 ServiceController.create(ServiceController.java:32): person saved:Person [id=752628020, name=123]
+INFO  2016-11-13 14:33:17,289 PersonServiceImpl.create(PersonServiceImpl.java:39): create('123') -> 'Person [id=752628020, name=123]'
+DEBUG 2016-11-13 14:33:17,289 UnitTestHashMapDatabase.read(UnitTestHashMapDatabase.java:63): read:752628020 found:Person [id=752628020, name=123]
+DEBUG 2016-11-13 14:33:17,289 UnitTestHashMapDatabase.read(UnitTestHashMapDatabase.java:63): read:752628020 found:Person [id=752628020, name=new]
+DEBUG 2016-11-13 14:33:17,290 UnitTestHashMapDatabase.update(UnitTestHashMapDatabase.java:55): update:Person [id=752628020, name=new] old:Person [id=752628020, name=new]
+DEBUG 2016-11-13 14:33:17,290 ServiceController.update(ServiceController.java:48): person updated:Person [id=752628020, name=new] oldName:'123'
+INFO  2016-11-13 14:33:17,290 PersonServiceImpl.update(PersonServiceImpl.java:32): update(id:'752628020' with name:'new') -> 'Person [id=752628020, name=new]'
+INFO  [org.wildfly.extension.undertow] JBAS017535: Unregistered web context: /test
+INFO  [org.jboss.as.jpa] JBAS011410: Stopping Persistence Unit (phase 2 of 2) Service 'test.war#test'
+INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] HHH000227: Running hbm2ddl schema export
+Hibernate: drop table person if exists
+INFO  [org.hibernate.tool.hbm2ddl.SchemaExport] HHH000230: Schema export complete
+INFO  [org.jboss.weld.deployer] JBAS016009: Stopping weld service for deployment test.war
+INFO  [org.jboss.as.jpa] JBAS011410: Stopping Persistence Unit (phase 1 of 2) Service 'test.war#test'
+INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment test.war (runtime-name: test.war) in 23ms
+INFO  [org.jboss.as.repository] JBAS014901: Content removed from location /home/maja/devstudio/runtimes/wildfly-8.2.0.Final/standalone/data/content/e3/3b6fa20a70b5858635c3bd0e31c6aa61db0e48/content
+INFO  [org.jboss.as.server] JBAS018558: Undeployed "test.war" (runtime-name: "test.war")
+Tests run: 4, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.4 sec
+INFO  [org.wildfly.extension.undertow] JBAS017535: Unregistered web context: /rest-service
+INFO  [org.jboss.as.connector.subsystems.datasources] JBAS010409: Unbound data source [java:jboss/datasources/ExampleDS]
+INFO  [org.jboss.weld.deployer] JBAS016009: Stopping weld service for deployment rest-service.war
+INFO  [org.wildfly.extension.undertow] JBAS017521: Undertow HTTP listener default suspending
+INFO  [org.wildfly.extension.undertow] JBAS017520: Undertow HTTP listener default stopped, was bound to /127.0.0.1:8080
+INFO  [org.jboss.as.connector.deployers.jdbc] JBAS010418: Stopped Driver service with driver-name = h2
+INFO  [com.arjuna.ats.jbossatx] ARJUNA032018: Destroying TransactionManagerService
+INFO  [org.wildfly.extension.undertow] JBAS017532: Host default-host stopping
+INFO  [com.arjuna.ats.jbossatx] ARJUNA032014: Stopping transaction recovery manager
+INFO  [org.wildfly.extension.undertow] JBAS017506: Undertow 1.1.0.Final stopping
+INFO  [org.jboss.as.server.deployment] JBAS015877: Stopped deployment rest-service.war (runtime-name: rest-service.war) in 33ms
+INFO  [org.jboss.as] JBAS015950: WildFly 8.2.0.Final "Tweek" stopped in 63ms
+
+Results :
+
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 12.620 s
+[INFO] Finished at: 2016-11-13T14:33:17+01:00
+[INFO] Final Memory: 21M/300M
+[INFO] ------------------------------------------------------------------------

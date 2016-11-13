@@ -1,0 +1,14 @@
+<arquillian xmlns="http://jboss.org/schema/arquillian"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://jboss.org/schema/arquillian
+http://jboss.org/schema/arquillian/arquillian_1_0.xsd">
+
+<container qualifier="arq-jbossas-remote" default="true">
+    <configuration>
+        <property name="jbossHome">/home/maja/devstudio/runtimes/wildfly-8.2.0.Final</property>
+        <property name="modulePath">/home/maja/devstudio/runtimes/wildfly-8.2.0.Final/modules</property>
+        <property name="java.util.logging.manager">org.jboss.logmanager.LogManager"</property>
+    </configuration>
+</container>
+
+</arquillian>
