@@ -1,7 +1,8 @@
 my homework
 ===================
 Based on Source: <https://github.com/jboss-developer/jboss-wfk-quickstarts/tree/2.7.x/helloworld-html5>
-License ->  Apache License Version 2.0
+
+ this work in this repro based on Apache License Version 2.0
 
 
 Simple rest-Service to store Person-Entitys (see:`/homework1/src/main/java/de/doCode/homework/model/Person.java`)
